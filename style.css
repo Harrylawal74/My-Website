@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+
+/* Colors aren't hard coded so that I can use differect colors later */
+:root {
+    --bg-color: #080808, #101010;
+    --text-color: #ffffff;
+    --main-color: #ea580c;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
