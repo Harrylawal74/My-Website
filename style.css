@@ -4,18 +4,113 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: "Poppins";
+    font-family: "Arial Black";
 }
 
 
 /* Colors aren't hard coded so that I can use differect colors later */
 :root {
-    --bg-color: #080808, #101010;
+    --bg-color: #080808;
+    --secondary-bg-color: #101010;
     --text-color: #ffffff;
-    --main-color: #ea580c;
+    --main-color: #c13cc5;
 }
 
 html {
     font-size: 60%;
     overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 15%;
+    background: rgba(0, 0, 0, 0.3);
+    /* */
+    backdrop-filter: blur(10px);
+
+    /* all items in the header are spaced evenly and horizontally aligned */
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+
+    /* makes sure that header content stays at the top of the page */
+    z-index: 1000;
+    text-wrap: nowrap; /* text inside the header doesnt wrap when page size changes */
+}
+
+#menu-icon{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: none;
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer; /* Clickable */
+    transition: 0.3s ease-in-out; /* Makes transition smooth */
+}
+
+.logo:hover{
+    transform: scale(1.1); 
+}
+
+span{
+    background: linear-gradient(
+        270deg,
+        #3796cc 10%,
+        #c13cc5 100%
+    );
+
+    /* Background is only visible behind the text*/
+    background-clip: text;
+
+    /* Makes text transparent so that the background is visible 
+    giving the text the backgrounds color */
+    color: transparent;
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.gradient-btn{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    margin-left: 4rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        #3796cc 10%,
+        #c13cc5 100%
+    );
+
+    letter-spacing: 1px;
+    cursor: pointer; /* Clickable */
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+}
+
+.gradient-btn:hover{
+    transform: scale(1.05);
 }
