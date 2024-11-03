@@ -46,6 +46,10 @@ body{
     text-wrap: nowrap; /* text inside the header doesnt wrap when page size changes */
 }
 
+.header a{
+    color: white;
+}
+
 #menu-icon{
     font-size: 3.5rem;
     color: var(--main-color);
