@@ -378,7 +378,7 @@ section{
     border: 2px solid var(--main-color);
     border-radius: 3rem;
     gap: 2rem;
-    padding: 5rem 2rem;
+    padding: 5rem 4rem 2rem;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 25px var(--main-color);
@@ -407,6 +407,20 @@ section{
 .project-card li{
     text-align: left;
     font-size: 1.3rem;
+}
+
+.project-card a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 1rem 3.5rem;
+    transition: 0.3s ease-in-out;
 }
 
 .contact{
@@ -441,7 +455,39 @@ section{
     resize: none;
 }
 
-.footer{
+.contact form .input-group2 input{
+    margin-top: 2.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--secondary-bg-color);
-    padding: 50px 0;
+    padding: 20px 0;
+}
+
+footer .social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer .btn-group{
+    display: flex;
+    justify-content: center;
+}
+
+footer .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
 }
