@@ -269,11 +269,13 @@ section{
 
 .values{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -100rem;
+    gap: 10rem;
+    background: var(--bg-color);
+    margin-bottom: 5rem;
 }
+
 
 .values h2{
     font-size: 4rem;
@@ -281,7 +283,7 @@ section{
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 10rem;
 }
 
 .values h3{
@@ -302,23 +304,31 @@ section{
 }
 
 
+.values-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
 .values-card{
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 15vw;
-    max-width: 250px;
-    height: 15vh;
-    margin: 3rem 0 -10rem 3rem;
     background-color: var(--bg-color);
-    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
     overflow: hidden;
-    box-shadow: 0 0 25px var(--main-color);
-    padding: 15px;
-    transition: 0.3s ease-in-out;
-    text-overflow: hidden;
     cursor: pointer;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.3s ease-in-out;
+    width: 15vw;
+    min-width: 250px;
 }
 
 .values-card:hover{
@@ -346,15 +356,15 @@ section{
     margin: 5rem 0;
 }
 .projects{
-    background-color: var(--bg-color);
+    background-color: var(--secondary-bg-color);
 }
 
 /* Go over this !!!!!!!!!!!!!! */
 .projects-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     place-items: center;
-    gap: 3rem;
+    column-gap: 3rem;
     row-gap: 5rem;
 }
 
@@ -400,7 +410,7 @@ section{
 }
 
 .contact{
-    background-color: var(--secondary-bg-color);
+    background-color: var(--bg-color);
 }
 
 .contact h2{
