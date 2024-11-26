@@ -565,7 +565,8 @@ footer .copyright{
         justify-content: center;
         width: 500px;
         padding-top: 4rem;
-        padding-left: 10rem;
+        margin-left: 3rem;
+        margin-right: 5%;
         border-bottom: none;
         gap: 1rem;
     }
