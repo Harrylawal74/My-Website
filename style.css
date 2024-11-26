@@ -8,6 +8,7 @@
 }
 
 
+
 /* Colors aren't hard coded so that I can use differect colors later */
 :root {
     --bg-color: #080808;
@@ -20,6 +21,7 @@ html {
     font-size: 60%;
     overflow-x: hidden;
 }
+
 
 body{
     background: var(--bg-color);
@@ -49,6 +51,7 @@ body{
 .header a{
     color: white;
 }
+
 
 #menu-icon{
     font-size: 3.5rem;
@@ -496,4 +499,92 @@ footer .copyright{
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+#iPhone{
+    display: none;
+}
+
+@media(max-width: 450px){
+    #iPhone{
+        display: flex;
+    }
+    
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        background-color: var(--secondary-bg-color);
+        transition: 0.7s ease-in-out;
+        font-size: 15px;
+        
+    }
+
+    .header{
+        display: none;
+    }
+
+    /* makes checkbox invisible*/
+    #sidebar-active{
+        display: none;
+    }
+
+    nav{
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: var(--secondary-bg-color);
+    }
+
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 5r;
+        padding: 20px 30px;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        color: var(--text-color);
+        font-size: 1.8rem;
+        font-weight: 300;
+        transition: 0.3s ease-in-out;
+        border-bottom: 3px solid transparent;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        padding-top: 4rem;
+        padding-left: 10rem;
+        border-bottom: none;
+        gap: 1rem;
+    }
+
+
+    .open-sidebar-button, .close-sidebar-button{
+        display: block;
+        padding: 20px;
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        display: flex;
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
 }
