@@ -4,7 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: "Arial Black", "Avenir Black" ;
+    font-family: "Arial black", Arial;
+    font-weight: bolder;
 }
 
 
