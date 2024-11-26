@@ -584,6 +584,7 @@ footer .copyright{
         right: 0;
     }
 
+    /*if overlay is clicked then nav disappears */
     #sidebar-active:checked ~ #overlay{
         height: 100%;
         width: 100%;
@@ -592,4 +593,13 @@ footer .copyright{
         left: 0;
         z-index: 9;
     }
+
+    nav a:active ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    } 
 }
