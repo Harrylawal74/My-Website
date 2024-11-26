@@ -367,10 +367,11 @@ section{
 /* Go over this !!!!!!!!!!!!!! */
 .projects-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 0.2fr));
     place-items: center;
     column-gap: 3rem;
-    row-gap: 5rem;
+    row-gap: 4rem;
 }
 
 .project-card{
