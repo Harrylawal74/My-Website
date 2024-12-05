@@ -562,6 +562,7 @@ footer .copyright{
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
         text-align: center;
+        z-index: 1000;
     }
 
     nav a{
@@ -667,6 +668,7 @@ footer .copyright{
 {
     .projects .heading{
         font-size: 5rem;
+        margin-top: -50px;
     }
 
     .projects-box{
@@ -675,6 +677,7 @@ footer .copyright{
         grid-template-columns: repeat(1, 150px 1fr);
         gap: 2.5rem; 
         padding: 135px;
+        margin-top: -150px;
     }
 
     .project-card{
@@ -722,6 +725,17 @@ footer .copyright{
         height: 25px;
     }
 
+    footer .list{
+        font-size: 1rem;
+        list-style-type: none;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media(max-width: 670px)
+{
     .contact h2{
         align-items: center;
         font-size: 5rem;
@@ -741,12 +755,5 @@ footer .copyright{
 
     .contact form .input-box input{
     height: 10px;
-    }
-
-    footer .list{
-        font-size: 1rem;
-        list-style-type: none;
-        padding-left: 2rem;
-        padding-bottom: 1rem;
     }
 }
