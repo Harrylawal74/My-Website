@@ -360,7 +360,7 @@ section{
 
 .heading{
     text-align: center;
-    font-size: 7rem;
+    font-size: 6rem;
     margin: -3rem 0;
     margin-bottom: 7rem;
 }
@@ -651,6 +651,11 @@ footer .copyright{
         text-align: center;
     }
 
+    .values h2{
+        margin-top: -7rem;
+    }
+
+
 
 @media(min-width: 730px)
 {
@@ -665,6 +670,7 @@ footer .copyright{
 }
 }
 
+
 @media(max-width: 390px)
 {
     .projects .heading{
@@ -675,10 +681,12 @@ footer .copyright{
     .projects-box{
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(1, 150px 1fr);
-        gap: 2.5rem; 
-        padding: 135px;
+        grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+        row-gap: 3rem; 
+        column-gap: 10rem;
+        padding-top: 135px;
         margin-top: -150px;
+        overflow-wrap: anywhere;
     }
 
     .project-card{
@@ -738,11 +746,11 @@ footer .copyright{
 @media(max-width: 670px)
 {
     .contact h2{
+        display: flex;
         align-items: center;
+        justify-content: space-evenly;
         font-size: 5rem;
         text-wrap: nowrap;
-        margin-left: -15px;
-        margin-top: -40px;
     }
 
     .contact form{
