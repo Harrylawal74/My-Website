@@ -139,8 +139,8 @@ section{
 .home-content{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
+    align-items: center;
+    text-align: center;
     gap: 10px;
 }
 
@@ -160,13 +160,15 @@ section{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
-    width: 21vw;
+    width: 211vw;
     max-width: 632px;
-    text-align: left;
+    text-align: center;
 }
 
 .home-img img{
-    width: 32vw;
+    display: flex;
+    align-items: center;
+    width: 40vw;
     max-width: 550px;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
@@ -274,7 +276,8 @@ section{
 
 .values{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     gap: 10rem;
     background: var(--bg-color);
@@ -283,12 +286,11 @@ section{
 
 
 .values h2{
-    font-size: 4rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
 }
 
 .values h3{
@@ -358,7 +360,8 @@ section{
 .heading{
     text-align: center;
     font-size: 7rem;
-    margin: 5rem 0;
+    margin: -3rem 0;
+    margin-bottom: 7rem;
 }
 .projects{
     background-color: var(--secondary-bg-color);
@@ -450,6 +453,7 @@ section{
 }
 
 .contact h2{
+    margin-top: 15px;
     margin-bottom: 3rem;
     color: var(--text-color);
 }
@@ -518,7 +522,7 @@ footer .copyright{
     display: none;
 }
 
-@media(max-width: 750px){
+@media(max-width: 1280px){
     #iPhone{
         display: flex;
     }
@@ -557,7 +561,7 @@ footer .copyright{
         position: fixed;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
-
+        text-align: center;
     }
 
     nav a{
@@ -571,6 +575,7 @@ footer .copyright{
         font-size: 1.8rem;
         font-weight: 300;
         transition: 0.3s ease-in-out;
+        position: relative;
     }
 
     .logo{
@@ -614,4 +619,134 @@ footer .copyright{
         left: 0;
         z-index: 9;
     } 
+
+    .home-content h1{
+        font-size: 3.5rem;
+    }
+
+    .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content p{
+        width: 35rem;
+    }
+
+    .home-img img{
+        width: 60vw;
+        max-width: 350px;
+    }
+    
+    .about{
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+
+    .about-content h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+
+@media(min-width: 730px)
+{
+    .logo{
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 18vw;
+        margin-left: 25%;
+        padding-left: 7%;
+        padding-right: 6.2%;
+    }
+}
+}
+
+@media(max-width: 390px)
+{
+    .projects .heading{
+        font-size: 5rem;
+    }
+
+    .projects-box{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 150px 1fr);
+        gap: 2.5rem; 
+        padding: 135px;
+    }
+
+    .project-card{
+        width: 17rem;
+        height: 28rem;  
+    }
+
+    .project-card ul{
+        display: none;
+    }
+
+    .project-card .img-container{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 100%;
+        margin-top: -5px;
+    }
+    .project-card img{
+        width: 130px;
+        border-radius: 3em;
+        object-fit: cover;
+    }
+    
+    .project-card h3{
+        display: none;
+    }
+    
+    .project-card p{
+        display: none;
+    }
+    
+    
+    .project-card .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 0.9rem;
+        text-wrap: nowrap;
+    }
+
+    .project-card a{
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact h2{
+        align-items: center;
+        font-size: 5rem;
+        text-wrap: nowrap;
+        margin-left: -15px;
+        margin-top: -40px;
+    }
+
+    .contact form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .contact form .input-box input{
+    height: 10px;
+    }
+
+    footer .list{
+        font-size: 1rem;
+        list-style-type: none;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
 }
