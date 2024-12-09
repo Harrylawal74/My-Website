@@ -1,4 +1,7 @@
-setTimeout(() => {
+const myTimeout = setTimeout(clearData, 100);
+
+
+function clearData() {
   const name = document.getElementById('name');
   const email = document.getElementById('email');
   const number = document.getElementById('number');
@@ -10,5 +13,4 @@ setTimeout(() => {
   number.value = '';
   subject.value = '';
   body.value = '';
-
-}, 1000); 
+}
