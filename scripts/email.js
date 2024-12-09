@@ -11,4 +11,4 @@ setTimeout(() => {
   subject.value = '';
   body.value = '';
 
-}, 100); 
+}, 1000); 
